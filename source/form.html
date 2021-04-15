@@ -28,8 +28,8 @@
                         <li class="site-list__item">
                             <a class="site-list__link page__link" href="#">Каталог продукции</a>
                         </li>
-                        <li class="site-list__item">
-                            <a class="site-list__link page__link site-list__link--active" href="#">Подбор программы</a>
+                        <li class="site-list__item site-list__item--active">
+                            <a class="site-list__link page__link" href="#">Подбор программы</a>
                         </li>
                     </ul>
                 </div>
@@ -53,11 +53,11 @@
                         </li>
                         <li class="data-list__item">
                             <label class="data-list__option" for="data-weight">Вес (кг):*</label>
-                            <input class="data-list__input-area" type="text" name="weight" id="data-weight" placeholder="7" required>
+                            <input class="data-list__input-area" type="number" name="weight" id="data-weight" placeholder="7" required>
                         </li>
                         <li class="data-list__item">
                             <label class="data-list__option" for="data-age">Возраст (лет):</label>
-                            <input class="data-list__input-area" type="text" name="age" id="data-age" placeholder="7">
+                            <input class="data-list__input-area" type="number" name="age" id="data-age" placeholder="7">
                         </li>
                     </ul>
                 </fieldset>
@@ -82,10 +82,10 @@
                         Контактные данные (владельца кота)
                     </h2>
                     <label class="contacts-data__email" for="input-email">
-                      <input class="contacts-data__email-input" type="text" name="email" id="input-email" placeholder="kuklachev@gmail.com" required>
+                      <input class="contacts-data__email-input" type="email" name="email" id="input-email" placeholder="kuklachev@gmail.com" required>
                     </label>
                     <label class="contacts-data__phone" for="input-phone">
-                      <input class="contacts-data__phone-input" type="text" name="phone" id="input-phone" placeholder="8 (960) 900-60-90" required>
+                      <input class="contacts-data__phone-input" type="tel" name="phone" id="input-phone" placeholder="8 (960) 900-60-90" required>
                     </label>
                 </fieldset>
                 <fieldset class="comment">
