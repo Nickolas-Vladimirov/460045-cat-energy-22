@@ -1,0 +1,102 @@
+.varieties-list{
+  width: 320px;
+  margin-top: 20px;
+
+  // outline: 5px solid rgb(178, 212, 53);
+  // outline-offset: -5px;
+}
+
+.varieties-list__item{
+  background-color: @basic_grey;
+  width: 280px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+
+  // outline: 5px solid rgb(135, 53, 212);
+  // outline-offset: -10px;
+}
+
+.varieties-list__skinny-wrapper{
+  padding-top: 30px;
+  // padding-bottom: 29px;
+  position: relative;
+
+&::before{
+  content: "";
+  position: absolute;
+  left: 30px;
+  top: 20px;
+  width: 50px;
+  height: 53px;
+  background: url("../../img/skinny-cat.svg");
+}
+
+}
+
+.varieties-list__heavy-wrapper{
+  padding-top: 30px;
+  // padding-bottom: 29px;
+  position: relative;
+
+&::before{
+  content: "";
+  position: absolute;
+  left: 20px;
+  top: 20px;
+  width: 67px;
+  height: 50px;
+  background: url("../../img/heavy-cat.svg");
+}
+
+}
+
+.varieties-list__headline{
+  font-size: 24px;
+  line-height: 37px;
+  color: @base-color-black;
+  margin-left: 100px;
+}
+
+.text__block{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding-left: 20px;
+  padding-right: 30px;
+  padding-top: 20px;
+}
+
+.varieties-list__text{
+  font-size: 14px;
+  line-height: 18px;
+  font-family: Arial;
+  color: @special_dark-grey;
+  position: relative;
+
+  &::after{
+    content: "";
+    position: absolute;
+    bottom: -25px;
+    left: 0;
+    height: 1px;
+    width: 240px;
+    background-color: @light_grey;
+  }
+}
+
+.varieties-list__link{
+  margin-top: 40px;
+  margin-bottom: 20px;
+  position: relative;
+
+  &::after{
+    content: "";
+    position: absolute;
+    width: 24px;
+    height: 12px;
+    top: 7px;
+    left: 90px;
+    background: url(../../img/icon-arrow.svg);
+  }
+
+}
