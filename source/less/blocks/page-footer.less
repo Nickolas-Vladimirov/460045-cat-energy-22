@@ -7,82 +7,13 @@
   padding: 28px 19px 28px 19px;
 }
 
-.contacts__headline {
-  font-size: 16px;
-  line-height: 18px;
-  max-width: 140px;
-  text-transform: uppercase;
-  color: @base-color-dark;
-}
-
-.contacts__text {
-  max-width: 140px;
-  font-size: 14px;
-  line-height: 20px;
-  font-family: "Arial", "Helvetica", sans-serif;
-  color: @special_dark-grey;
-}
-
-.map {
-  position: relative;
-
-  &::after {
-    content: "";
-    position: absolute;
-    width: 57px;
-    height: 53px;
-    background: url("../img/marker.png");
-  }
-}
-
-.image-wrapper {
-  width: 100%;
+.page-footer__block {
   display: flex;
   justify-content: center;
+}
+
+.page-footer__block--wrapper{
+  width: 100%;
   margin-top: 39px;
   margin-bottom: 32px;
-}
-
-.social-list {
-  display: flex;
-  justify-content: space-around;
-  padding: 14px 80px 24px 80px;
-  position: relative;
-
-  &::before {
-    content: "";
-    position: absolute;
-    width: 280px;
-    height: 1px;
-    top: -10px;
-    left: 20px;
-    background-color: @light_grey;
-  }
-
-  &::after {
-    content: "";
-    position: absolute;
-    width: 280px;
-    height: 1px;
-    top: 60px;
-    left: 20px;
-    background-color: @light_grey;
-  }
-}
-
-.social-block {
-  margin-top: 28px;
-  margin-bottom: 32px;
-  padding-left: 20px;
-  padding-right: 20px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.social-block__text {
-  font-size: 16px;
-  line-height: 18px;
-  color: @special_dark-grey;
-  font-family: "Arial", "Helvetica", sans-serif;
 }

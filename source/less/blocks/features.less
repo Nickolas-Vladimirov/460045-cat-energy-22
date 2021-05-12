@@ -1,15 +1,21 @@
 .features {
   width: 300px;
+}
+
+.features--wrapper{
   padding-left: 20px;
   margin-bottom: 40px;
 }
 
 .features__headline {
-  margin-top: 20px;
-  margin-bottom: 38px;
   font-size: 36px;
   line-height: 40px;
   color: inherit;
+}
+
+.features__headline--wrapper{
+  margin-top: 20px;
+  margin-bottom: 38px;
 }
 
 .features-list__item {
@@ -17,13 +23,16 @@
   font-size: 14px;
   line-height: 18px;
   font-family: "Arial", "Helvetica", sans-serif;
-  margin-bottom: 26px;
   padding-right: 10px;
   padding-left: 80px;
+}
+
+.features-list__item--wrapper{
+  margin-bottom: 26px;
   position: relative;
 }
 
-.healthy-food::before {
+.features-list__item--healthy-food::before {
   content: "";
   position: absolute;
   width: 60px;
@@ -33,7 +42,7 @@
   background: url("../img/features/healthy-food.svg");
 }
 
-.powder-food::before {
+.features-list__item--powder-food::before {
   content: "";
   position: absolute;
   width: 60px;
@@ -43,7 +52,7 @@
   background: url("../img/features/powder-food.svg");
 }
 
-.hearty-food::before {
+.features-list__item--hearty-food::before {
   content: "";
   position: absolute;
   width: 60px;
@@ -53,7 +62,7 @@
   background: url("../img/features/hearty-food.svg");
 }
 
-.time-food::before {
+.features-list__item--time-food::before {
   content: "";
   position: absolute;
   width: 60px;
