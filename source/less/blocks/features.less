@@ -18,6 +18,11 @@
   margin-bottom: 38px;
 }
 
+.features-list__item--wrapper {
+  margin-bottom: 26px;
+  position: relative;
+}
+
 .features-list__item {
   color: @special_dark-grey;
   font-size: 14px;
@@ -27,47 +32,27 @@
   padding-left: 80px;
 }
 
-.features-list__item--wrapper {
-  margin-bottom: 26px;
-  position: relative;
-}
-
-.features-list__item--healthy-food::before {
+.features-list__item::before {
   content: "";
   position: absolute;
   width: 60px;
   height: 60px;
   left: 0;
   top: -5px;
+}
+
+.features-list__item--healthy-food::before {
   background: url("../img/features/healthy-food.svg");
 }
 
 .features-list__item--powder-food::before {
-  content: "";
-  position: absolute;
-  width: 60px;
-  height: 60px;
-  left: 0;
-  top: -5px;
   background: url("../img/features/powder-food.svg");
 }
 
 .features-list__item--hearty-food::before {
-  content: "";
-  position: absolute;
-  width: 60px;
-  height: 60px;
-  left: 0;
-  top: -5px;
   background: url("../img/features/hearty-food.svg");
 }
 
 .features-list__item--time-food::before {
-  content: "";
-  position: absolute;
-  width: 60px;
-  height: 60px;
-  left: 0;
-  top: -5px;
   background: url("../img/features/time-food.svg");
 }
