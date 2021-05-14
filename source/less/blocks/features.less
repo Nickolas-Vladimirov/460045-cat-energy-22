@@ -1,0 +1,58 @@
+.features {
+  width: 300px;
+}
+
+.features--wrapper {
+  padding-left: 20px;
+  margin-bottom: 40px;
+}
+
+.features__headline {
+  font-size: 36px;
+  line-height: 40px;
+  color: inherit;
+}
+
+.features__headline--wrapper {
+  margin-top: 20px;
+  margin-bottom: 38px;
+}
+
+.features-list__item--wrapper {
+  margin-bottom: 26px;
+  position: relative;
+}
+
+.features-list__item {
+  color: @special_dark-grey;
+  font-size: 14px;
+  line-height: 18px;
+  font-family: "Arial", "Helvetica", sans-serif;
+  padding-right: 10px;
+  padding-left: 80px;
+}
+
+.features-list__item::before {
+  content: "";
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  left: 0;
+  top: -5px;
+}
+
+.features-list__item--healthy-food::before {
+  background: url("../img/features/healthy-food.svg");
+}
+
+.features-list__item--powder-food::before {
+  background: url("../img/features/powder-food.svg");
+}
+
+.features-list__item--hearty-food::before {
+  background: url("../img/features/hearty-food.svg");
+}
+
+.features-list__item--time-food::before {
+  background: url("../img/features/time-food.svg");
+}

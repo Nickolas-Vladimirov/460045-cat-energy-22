@@ -1,0 +1,29 @@
+.social-list {
+  display: flex;
+  justify-content: space-around;
+  padding: 14px 80px 24px 80px;
+}
+
+.social-list--wrapper {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 280px;
+    height: 1px;
+    top: -10px;
+    left: 20px;
+    background-color: @light_grey;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 280px;
+    height: 1px;
+    top: 60px;
+    left: 20px;
+    background-color: @light_grey;
+  }
+}
