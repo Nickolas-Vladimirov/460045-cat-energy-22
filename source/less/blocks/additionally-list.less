@@ -1,0 +1,32 @@
+.additionally-list__item {
+  margin-bottom: 25px;
+}
+
+.additionally-list__checkbox {
+  line-height: 18px;
+  margin-left: 46px;
+  color: inherit;
+  position: relative;
+  display: block;
+}
+
+.additionally-list__checkbox-input + .additionally-list__checkbox::before {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  left: -46px;
+  top: -5px;
+  border: 1px solid @special_light-grey-second;
+}
+
+.additionally-list__checkbox-input:checked + .additionally-list__checkbox::after {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  left: -40px;
+  top: 4px;
+  background: url("../../img/form/check.svg");
+  background-repeat: no-repeat;
+}
