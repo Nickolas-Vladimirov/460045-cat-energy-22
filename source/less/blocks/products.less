@@ -1,0 +1,23 @@
+.products--wrapper {
+  // outline: 5px solid red;
+  // outline-offset: -5px;
+  color: @base-color-black;
+  padding: 30px 20px 0 20px;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 320px;
+    height: 1px;
+    top: 0;
+    left: 0;
+    background-color: @light_grey;
+  }
+}
+
+.products__headline {
+  font-size: 36px;
+  line-height: 36px;
+  color: inherit;
+}

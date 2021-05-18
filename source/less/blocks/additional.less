@@ -1,0 +1,24 @@
+.additional {
+  // outline: 5px solid rgb(179, 255, 0);
+  // outline-offset: -10px;
+
+  color: @base-color-black;
+  padding: 20px 20px 0 20px;
+}
+
+.additional__headline {
+  font-size: 24px;
+  line-height: 24px;
+  color: inherit;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 53px;
+    height: 2px;
+    top: 15px;
+    right: -22px;
+    background-color: @basic_green;
+  }
+}
