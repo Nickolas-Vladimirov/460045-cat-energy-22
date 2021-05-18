@@ -1,0 +1,50 @@
+.variables-list {
+  padding: 22px 20px 0 20px;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 320px;
+    height: 1px;
+    top: 170px;
+    left: 0;
+    background-color: @light_grey;
+  }
+}
+
+.variables-list__item {
+  color: @special_dark-grey-second;
+  margin-bottom: 25px;
+  text-transform: uppercase;
+}
+
+.variables-list__option {
+  color: @special_dark-grey-second;
+  line-height: 18px;
+  margin-left: 46px;
+  margin-bottom: 25px;
+  position: relative;
+}
+
+.variables-list__input-radio + .variables-list__option::before {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 0;
+  left: -46px;
+  border: 1px solid @special_light-grey-second;
+  border-radius: 50%;
+}
+
+.variables-list__input-radio:checked + .variables-list__option::after {
+  content: "";
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  top: 9px;
+  left: -37px;
+  background-color: @basic_green;
+  border-radius: 50%;
+}
